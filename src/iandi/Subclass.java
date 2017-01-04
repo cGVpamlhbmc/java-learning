@@ -1,6 +1,14 @@
 package iandi;
 
-public class Subclass extends Supperclass{
+public class Subclass extends Superclass{
+	
+	public Subclass(){}
+	
+	public Subclass(String param1, String param2){
+		super(param1);
+		//do something other
+	}
+	
 	// overrides printMethod in Superclass
     public void printMethod() {
         super.printMethod();
