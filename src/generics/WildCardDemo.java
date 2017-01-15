@@ -15,11 +15,11 @@ public class WildCardDemo {
 			s += n.doubleValue();
 		return s;
 	}
-	
+
 	public static void addNumbers(List<? super Integer> list) {
-	    for (int i = 1; i <= 10; i++) {
-	        list.add(i);
-	    }
+		for (int i = 1; i <= 10; i++) {
+			list.add(i);
+		}
 	}
 
 	public static void printList(List<?> list) {
@@ -39,5 +39,8 @@ public class WildCardDemo {
 		List<String> ls = Arrays.asList("one", "two", "three");
 		printList(li);
 		printList(ls);
+
+		List<? extends Integer> intList = new ArrayList<>();
+		List<? extends Number> numberList = intList;
 	}
 }
