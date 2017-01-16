@@ -1,6 +1,7 @@
 package generics;
 
 import java.util.*;
+import java.util.List;
 
 public class WildCardDemo {
 	public static void process(List<? extends Integer> list) {
@@ -27,6 +28,16 @@ public class WildCardDemo {
 			System.out.print(elem + " ");
 		System.out.println();
 	}
+	
+	public void foo(List<?> i){
+		fooHelper(i);
+	}
+	
+	// Helper method created so that the wildcard can be captured
+    // through type inference.
+    private <T> void fooHelper(List<T> l) {
+        l.set(0, l.get(0));
+    }
 
 	public static void main(String[] args) {
 		// List<Integer> list = Arrays.asList(10, 9, 8, 7, 6, 5, 4, 3, 2, 1);
@@ -42,5 +53,7 @@ public class WildCardDemo {
 
 		List<? extends Integer> intList = new ArrayList<>();
 		List<? extends Number> numberList = intList;
+		
+		
 	}
 }
