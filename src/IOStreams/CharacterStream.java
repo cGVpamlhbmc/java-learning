@@ -11,8 +11,8 @@ public class CharacterStream {
 		FileWriter outputStream = null;
 
 		try {
-			inputStream = new FileReader("xanadu.txt");
-			outputStream = new FileWriter("characteroutput.txt");
+			inputStream = new FileReader("in.txt");
+			outputStream = new FileWriter("out.txt");
 
 			int c;
 			while ((c = inputStream.read()) != -1) {

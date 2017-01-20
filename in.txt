@@ -1,1 +1,10 @@
 Hello World.
+
+    _tcq.push(['_serialid', '0']);
+    _tcq.push(['_vrcode', '10005-2035-0']);
+    _tcq.push(['_refId', '242525969']);
+    _tcq.push(['_userId', '0']);
+    _tcq.push(['_openTime', _timediff]);
+    _tcq.push(['_trackPageview', '']);
+    _tcq.push(['_resId', '0']);
+    _tcq.push(['_qdid', '']);
