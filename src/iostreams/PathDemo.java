@@ -1,4 +1,4 @@
-package IOStreams;
+package iostreams;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

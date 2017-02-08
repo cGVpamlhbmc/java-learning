@@ -1,4 +1,4 @@
-package IOStreams;
+package iostreams;
 
 import java.io.*;
 import java.nio.charset.Charset;

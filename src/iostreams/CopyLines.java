@@ -1,4 +1,4 @@
-package IOStreams;
+package iostreams;
 
 import java.io.FileReader;
 import java.io.FileWriter;

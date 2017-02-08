@@ -1,4 +1,4 @@
-package IOStreams;
+package iostreams;
 
 import java.io.IOException;
 import java.nio.file.DirectoryIteratorException;
