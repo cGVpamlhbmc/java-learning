@@ -8,10 +8,15 @@ public class SleepMessages {
 
 		for (int i = 0; i < importantInfo.length; i++) {
 			// Pause for 4 seconds
-			Thread.sleep(4000);
+			try {
+				Thread.sleep(4000);
+			} catch (InterruptedException e) {
+				System.out.println("InterruptedException");
+			}
 			// Print a message
 			System.out.println(importantInfo[i]);
 		}
+		Thread.interrupted()
 	}
 
 }
