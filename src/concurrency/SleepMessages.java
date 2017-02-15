@@ -16,7 +16,6 @@ public class SleepMessages {
 			// Print a message
 			System.out.println(importantInfo[i]);
 		}
-		Thread.interrupted()
 	}
 
 }

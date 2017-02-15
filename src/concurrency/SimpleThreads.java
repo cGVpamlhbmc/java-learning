@@ -51,6 +51,7 @@ public class SimpleThreads {
 			// for MessageLoop thread
 			// to finish.
 			t.join(1000);
+			long current = System.currentTimeMillis() - startTime;
 			if (((System.currentTimeMillis() - startTime) > patience) && t.isAlive()) {
 				threadMessage("Tired of waiting!");
 				t.interrupt();
