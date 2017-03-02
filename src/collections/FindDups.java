@@ -11,10 +11,12 @@ public class FindDups {
 		// System.out.println(distinctWords.size() + " distinct words: " +
 		// distinctWords);
 
-		Set<String> s = new HashSet<String>();
-		for (String a : args)
-			s.add(a);
-		System.out.println(s.size() + " distinct words: " + s);
+//		Set<String> s = new HashSet<String>();
+//		for (String a : args)
+//			s.add(a);
+//		System.out.println(s.size() + " distinct words: " + s);
+		
+		
 	}
 
 }
